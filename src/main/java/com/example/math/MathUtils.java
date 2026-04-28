@@ -24,10 +24,10 @@ public class MathUtils {
    * Divides two integers.
    */
   public static int divide(int a, int b) {
-    if (b == 0)
+    if (b == 0) {
       logger.error("Attempted to divide {} by zero", a);
       throw new IllegalArgumentException("Divider must not be zero");
-
+    }
     return a / b;
   }
 }
